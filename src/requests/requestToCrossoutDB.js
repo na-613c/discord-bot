@@ -37,7 +37,7 @@ async function requestToCrossoutDB([url, secondUrl]) {
     counterError++
 
     $('.selectable-row').each((i, element) => {
-        let res = initResponce;
+        let res = {...initResponce};
         $(element).find('td').each((j, element2) => {
 
             if (j === 0) {
